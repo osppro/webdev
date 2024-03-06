@@ -5,8 +5,13 @@ import (
 )
 
 func main() {
-	var a int //this is a variable
-	fmt.Println("Enter your Number: ")
-	fmt.Scanln(&a)
-	fmt.Println("the number you entered is ", a)
+	var firstnum int  //this is a variable
+	var secondnum int //this is variable declaration in go...
+	fmt.Println("Enter your first Number: ")
+	fmt.Scanln(&firstnum)
+	fmt.Println("Enter your second Number: ")
+	fmt.Scanln(&secondnum)
+	fmt.Println("the number you entered is ", firstnum)
+	var sum = firstnum + secondnum
+	fmt.Println("the sum of first number ", firstnum, " and second number ", secondnum, "is ", sum)
 }
